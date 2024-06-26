@@ -16,6 +16,7 @@
     <!-- подключаем иконки (шрифты) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- подключаем библиотеки -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,15 +41,17 @@
                     <ul class="nav_list">
                         <li class="nav_item"><a href="#home">About me</a></li>
                         <li class="nav_item"><a href="#useful">Tech stack</a></li>
-                        <li class="nav_item"><a href="#service">Portfolio</a></li>
+                        <li class="nav_item"><a href="#service">Projects</a></li>
                         <li class="nav_item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
 
             <div class="promo_content">
+                <img class="promo_photo" src="./img/me.jpeg" alt="me">
                 <div class="promo_text">
                     <h1 class="promo_title">About me</h1>
+
                     <div class="promo_descr">Hello! My name is Nataliia Filina. I am a Front-end Developer and I
                         have
                         mastered HTML5, CSS3,
@@ -59,9 +62,13 @@
                         team projects. I am
                         always delighted to get some new useful information.
                     </div>
-
+                    <br>
+                    <a href="/cv/Nataliia_Filina_Front_End_Developer.pdf" download="" class="promo_link">Click here to
+                        download
+                        CV</a>
                 </div>
-                <div class="promo_video">
+
+                <!-- <div class="promo_video">
                     <video src="./video/IMG_1878.MOV" poster="./video/poster.png"></video>
                     <div class="promo_play">
                         <div>
@@ -69,7 +76,8 @@
                         </div>
                         Watch the video
                     </div>
-                </div>
+                </div> -->
+
             </div>
         </div>
     </section>
@@ -115,126 +123,166 @@
         </div>
     </section>
 
-    <!-- <section class="servis" id="service">
-        <h2 class="title">Portfolio</h2>
-        <div class="descr">Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Fugit quis quod sint maxime mollitia
-            eligendi laboriosam, sequi officiis explicabo debitis?
-            Ad non tempore veritatis nisi inventore expedita quos
-            eveniet vel.</div>
+    <section class="servis" id="service">
+        <h2 class="title">Projects</h2>
+        <div class="service_descr"> Please note! The projects are written on a free server and therefore there may be
+            some problems with the first launch. To eliminate this shortcoming, just refresh the page.</div>
         <div class="service_content">
             <div class="tabs">
                 <div class="tabs_item">
                     <div class="tabs_head">
                         <div class="tabs_wrap">
                             <div class="tabs_icon">
-                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <i class="fa-solid fa-glass-water"></i>
                             </div>
-                            <div class="tabs_title">Site 1</div>
+                            <div class="tabs_title">Water Tracker</div>
                         </div>
                         <div class="tabs_down">
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="tabs_content">
-                        <div class="tabs_img"></div>
-                        <div class="tabs_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
-                            voluptates nobis totam, sed ea saepe. Commodi eaque, animi doloremque sed corrupti
-                            temporibus. Voluptas
-                            reprehenderit itaque optio sit, adipisci illum corrupti!</div>
+                        <img class="tabs_img" src="./img/water-tracker.jpg" alt="">
+                        <div class="tabs_desc">
+                            <div class="tabs_text">Used: HTML, CSS, React, Node.js <br>
+                                A website with a responsive layout. My role: Scrum
+                                Master, developer of the website (Welcome page)</div> <br>
+                            <br>
+                            <a href="https://bendelvolodymyr.github.io/Smart-Foxes-WaterTracker/welcome" target="_blank"
+                                class="tabs_link">Link: Click here</a>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="tabs_item">
                     <div class="tabs_head">
                         <div class="tabs_wrap">
                             <div class="tabs_icon">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-sailboat"></i>
                             </div>
-                            <div class="tabs_title">Inbox</div>
+                            <div class="tabs_title">Yacht Adventures</div>
                         </div>
                         <div class="tabs_down">
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="tabs_content">
-                        <div class="tabs_img"></div>
-                        <div class="tabs_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi
-                            dolor eveniet sit est? Praesentium numquam harum ipsa hic, quasi suscipit asperiores, eaque
-                            reprehenderit nisi ratione saepe! Ab, doloremque aperiam.</div>
+                        <img class="tabs_img" src="./img/yaht.png" alt="">
+                        <div class="tabs_desc">
+                            <div class="tabs_text">Used: HTML, CSS, JS, Vanilla App <br>
+                                A website with a responsive layout. Role: Team Lead,
+                                developer Build project on github, check for build
+                                errors and live page performance, developer of the
+                                About section.</div> <br>
+                            <a href='https://natafilina.github.io/Smart-Foxes-YachtAdventures/' target="_blank"
+                                class="tabs_link">Link: Click
+                                here</a>
+                        </div>
                     </div>
                 </div>
                 <div class="tabs_item">
                     <div class="tabs_head">
                         <div class="tabs_wrap">
                             <div class="tabs_icon">
-                                <i class="fa-solid fa-people-group"></i>
+                                <i class="fa-solid fa-book"></i>
                             </div>
-                            <div class="tabs_title">Team</div>
+                            <div class="tabs_title">Book Shelf</div>
                         </div>
                         <div class="tabs_down">
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="tabs_content">
-                        <div class="tabs_img"></div>
-                        <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-                            illum voluptate natus ullam architecto necessitatibus voluptatum itaque possimus rerum!
-                            Dolores, explicabo quam non
-                            voluptates autem consequuntur? Quasi minus quas sapiente?</div>
+                        <img class="tabs_img" src="./img/books.png" alt="">
+                        <div class="tabs_desc">
+                            <div class="tabs_text">Used: HTML, CSS, JS, Vite <br>
+                                A website with a responsive layout. Role: Developer
+                                of the Home section (Best Sellers Books).
+                            </div> <br>
+                            <br>
+                            <a href="https://bendelvolodymyr.github.io/Smart-Foxes-Bookshelf/" target="_blank"
+                                class="tabs_link">Link: Click
+                                here</a>
+                        </div>
                     </div>
                 </div>
                 <div class="tabs_item">
                     <div class="tabs_head">
                         <div class="tabs_wrap">
                             <div class="tabs_icon">
-                                <i class="fa-solid fa-gear"></i>
+                                <i class="fa-solid fa-object-group"></i>
                             </div>
-                            <div class="tabs_title">Settings</div>
+                            <div class="tabs_title">Web Studio</div>
                         </div>
                         <div class="tabs_down">
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="tabs_content">
-                        <div class="tabs_img"></div>
-                        <div class="tabs_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni labore
-                            earum adipisci praesentium quas pariatur, ex cumque ullam rerum ut voluptatum impedit
-                            corrupti
-                            saepe deleniti. Ipsa, rerum. Assumenda, aliquam dolor?</div>
-                    </div>
-                </div>
-                <div class="tabs_item">
-                    <div class="tabs_head">
-                        <div class="tabs_wrap">
-                            <div class="tabs_icon">
-                                <i class="fa-solid fa-rss"></i>
-                            </div>
-                            <div class="tabs_title">Feed</div>
+                        <img class="tabs_img" src="./img/WebStudio.jpg" alt="">
+                        <div class="tabs_desc">
+                            <div class="tabs_text">Used: HTML, CSS <br>
+                                A website with a responsive layout. Role: Developer
+                                of the website.</div> <br>
+                            <br>
+                            <a href="https://natafilina.github.io/goit-markup-hw-06/index.html" target="_blank"
+                                class="tabs_link">Link: Click
+                                here</a>
                         </div>
-                        <div class="tabs_down">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                    </div>
-                    <div class="tabs_content">
-                        <div class="tabs_img"></div>
-                        <div class="tabs_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                            veritatis, reprehenderit, totam, nam architecto ut mollitia dicta asperiores veniam nulla a.
-                            Architecto magnam ipsum
-                            exercitationem, nemo laborum quaerat pariatur inventore.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="comment">
         <div class="conteiner">
-            <div class="comment_wrap">
 
-                <h2 class="comment_title">
-                    My Certificates
-                </h2>
+            <h2 class="comment_title">
+                My Certificates
+            </h2>
 
-                <div>
+            <div class="variable-width wrapper__slider">
+                <div class="wrapper__slider__content">
+                    <img class="slider__img" src="/img/diplomas/FullStack.jpg" alt="">
+                    <div class="wrapper__slider__text">
+                        <div class="slider__title">GoIT</div>
+                        <p class="slider__text">
+                            FullStack Developer
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper__slider__content">
+                    <img class="slider__img" src="/img/diplomas/Master'sDiploma.png" alt="">
+                    <div class="wrapper__slider__text">
+                        <div class="slider__title">O.M. Beketov National University of Urban Economy in Kharkiv</div>
+                        <p class="slider__text">
+                            Master Degree <br> Program Subject Area "Lighting technologies and light
+                            sources"
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper__slider__content">
+                    <img class="slider__img" src="/img/diplomas/TestingDiploma.jpg" alt="">
+                    <div class="wrapper__slider__text">
+                        <div class="slider__title">STEP Computer Academy</div>
+                        <p class="slider__text">Software testing </p>
+                    </div>
+                </div>
+                <div class="wrapper__slider__content">
+                    <img class="slider__img" src="/img/diplomas/GreenForestCertificate.PNG" alt="" width="100%">
+                    <div class="wrapper__slider__text">
+                        <div class="slider__title">Green Forest</div>
+                        <p class="slider__text">
+                            English - Upper-Intermediate/B2
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- <div>
                     <div class="comment_item">
                         <div class="comment_icon"
                             style="background: url(icons/French-woman-e1667050422125-1024x683.jpg) center center/cover no-repeat">
@@ -244,24 +292,12 @@
                             <div class="comment_text">Lorem ipsum khjb</div>
                         </div>
                     </div>
-                    <div class="comment_item">
-                        <div class="comment_icon"
-                            style="background: url(icons/Jordan-StraussInvisionAP.jpg) center center/cover no-repeat">
-                        </div>
-                        <div class="comment_content">
-                            <div class="comment_name">Name 2</div>
-                            <div class="comment_text">Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Voluptatem quia suscipit error, ipsum id iure? Ut voluptas
-                                sunt quos ad a adipisci ea, necessitatibus
-                                similique nulla omnis, labore distinctio deserunt.</div>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!--        <section class="contact" id="contact">
         <h2 class="title">Contact me</h2>
         <div class="descr descr_dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, doloribus quo,
             obcaecati veniam atque odio vitae, nesciunt earum pariatur maiores saepe est aliquam aperiam debitis sunt.
@@ -318,10 +354,11 @@
     </footer> -->
 
 
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/main.js"></script> -->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
