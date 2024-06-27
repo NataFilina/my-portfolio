@@ -54,16 +54,7 @@ textarea:focus {
     font-size: 30px;
   }
 }
-.descr {
-  color: #b0bec5;
-  line-height: 25px;
-  text-align: center;
-  width: 560px;
-  margin: 25px auto 0 auto;
-}
-.descr_dark {
-  color: #061e37;
-}
+
 /* Promo section */
 .promo {
   background: url(../img/wes-hicks-YJ4876M7AoY-unsplash.jpg) center center/cover
@@ -628,15 +619,22 @@ textarea:focus {
   height: 100%;
   margin: 0 10px;
 }
-.wrapper__slider__text {
+
+.wrapper__slider__content {
   display: flex;
   flex-direction: column;
-  /* gap: 15px; */
-  width: 317px;
-  /* padding: 15px; */
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  margin-left: 12px;
+}
+.wrapper__slider__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 317px;
 }
 .slider__title {
   font-size: 15px;
@@ -656,30 +654,124 @@ textarea:focus {
 /* Section contact */
 .contact {
   background-color: #fafafa;
-  padding: 50px 0 100px;
+  margin: 20px auto;
+}
+.contact_descr {
+  font-size: 12px;
+  color: #061e37;
+  line-height: 25px;
+  text-align: center;
+  margin: 25px auto 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .contact_descr {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact_descr {
+    font-size: 16px;
+  }
 }
 .contact_content {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+.contacts_list {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: start;
+}
+.contact_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.contact_item_text {
+  font-size: 12px;
+  color: #061e37;
+  line-height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contact_item_text {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact_item_text {
+    font-size: 16px;
+  }
+}
+
+.contact_item_icon {
+  color: #061e37;
+  font-size: 15px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .contact_item_icon {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact_item_icon {
+    font-size: 25px;
+  }
+}
+
 /* Form */
-.form_wrap {
-  margin-top: 20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 }
 .form_inp {
-  width: 280px;
-  height: 50px;
+  display: block;
+  width: 317px;
+  height: 45px;
   border-radius: 5px;
   border: 1px solid #061e37;
   color: #061e37;
   font-size: 14px;
   font-weight: 500;
   padding: 0 20px;
-  margin: 0 20px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .form_inp {
+    width: 330px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .form_inp {
+    width: 500px;
+  }
 }
 .form_message {
-  width: 600px;
+  width: 317px;
   height: 150px;
   border-radius: 5px;
   border: 1px solid #061e37;
@@ -691,24 +783,21 @@ textarea:focus {
   /* Запрещакм изменять размер (растягивать) */
   resize: none;
 }
+@media only screen and (min-width: 768px) {
+  .form_message {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .form_message {
+    width: 1120px;
+  }
+}
 .form_send {
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.form label {
-  display: flex;
-  align-items: center;
-  color: #061e37;
-  font-size: 15px;
-  font-weight: 500;
-}
-.form_subs {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #061e37;
 }
 .form_btn {
   border: none;
@@ -723,7 +812,8 @@ textarea:focus {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.form_btn {
+.form_btn:hover,
+.form_btn:focus {
   background-color: #109674;
 }
 /* Section Footer */
