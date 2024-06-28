@@ -98,7 +98,7 @@ textarea:focus {
   font-style: normal;
   width: 48px;
   padding: 0;
-  color: rgb(97, 0, 0);
+  color: #061e37;
   font-size: 20px;
   font-weight: 500;
   line-height: 18px;
@@ -818,44 +818,48 @@ textarea:focus {
 }
 /* Section Footer */
 .footer {
-  padding: 100px 0;
+  display: block;
+  padding: 15px 0;
   background-color: #061e37;
+  margin: 20px auto;
 }
 .footer_wrap {
   display: flex;
   justify-content: space-between;
-  min-height: 120px;
+  gap: 15px;
 }
 .footer_first {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.footer_submenu {
+.logo_text_footer {
+  color: rgb(255, 255, 255);
+}
+.footer_links {
+  margin-top: 10px;
+  width: 100px;
   display: flex;
+  justify-content: end;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.footer_submenu a {
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-}
-.footer_submenu div {
-  width: 6px;
-  height: 6px;
-  background-color: #ffffff;
-  border-radius: 100%;
-  margin: 0 20px;
+@media only screen and (min-width: 1280px) {
+  .footer_links {
+    width: 150px;
+    gap: 15px;
+  }
 }
 .footer_links i {
   opacity: 0.2;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
 }
-.footer_links a {
-  margin-left: 20px;
+@media only screen and (min-width: 1280px) {
+  .footer_links i {
+    font-size: 20px;
+  }
 }
 .footer_primary {
   display: flex;
