@@ -68,7 +68,6 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 15px;
 }
 .logo_wrap {
@@ -170,8 +169,16 @@ textarea:focus {
     font-weight: 600;
   }
 }
-.nav_item_margin_none {
-  margin-right: 0;
+.language {
+  font-size: 8px;
+  border: none;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+option {
+  font-size: 8px;
+  color: #061e37;
 }
 
 .promo_content {
@@ -618,8 +625,12 @@ textarea:focus {
   width: 317px;
   height: 100%;
   margin: 0 10px;
+  transition: 1s;
 }
-
+.slider__img:hover,
+.slider__img:focus {
+  transform: scale(1.2);
+}
 .wrapper__slider__content {
   display: flex;
   flex-direction: column;
